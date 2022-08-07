@@ -1,0 +1,91 @@
+.formContainer {
+  background-color: #d6e7f5;
+  width: 210px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  height: 160px;
+}
+.inputsDisplay {
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+}
+.submitBtns {
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 2px 2px #0000008c;
+}
+.removeBtns {
+  background-color: red;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+  color: white;
+  box-shadow: 2px 2px #0000008c;
+}
+.overAllSubmit,
+.append {
+  background-color: #70bff6;
+  margin: 50px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 2px 2px #0000008c;
+}
+.overAllSubmit:hover,
+.removeBtns:hover,
+.submitBtns:hover,
+.append:hover {
+  cursor: pointer;
+}
+/*  */
+.overAllSubmit:active,
+.removeBtns:active,
+.submitBtns:active,
+.append:active {
+  transform: translate(0px, 3px);
+  transition: 0.3s;
+  box-shadow: 4px 4px #0000008c;
+}
+
+.errors {
+  color: red;
+}
+
+.animate-delay {
+  animation-name: delay;
+  animation-duration: 0.5s;
+}
+@keyframes delay {
+  0% {
+    opacity: 0.2;
+    transform: scaleX(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+.animate {
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+@keyframes example {
+  0% {
+    opacity: 0.2;
+    transform: scaleX(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
